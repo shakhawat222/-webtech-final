@@ -1,0 +1,172 @@
+/* General Page Styles */
+body {
+    background-color: #77f3f7; /* Light Sky Blue background for a brighter feel */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centering the container */
+.container {
+    display: flex;
+    flex-direction: column;  /* Stack vertically */
+    justify-content: center;
+    align-items: center;     /* Center horizontally */
+    gap: 30px;
+    padding: 20px;
+}
+
+
+
+/* Book Form Box */
+.form-box {
+    background-color: #ffffff;
+    border: 2px solid #0d1e55; /* Bright orange border */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.form-box:hover {
+    transform: translateY(-5px);  /* Slight hover effect */
+}
+
+/* Add Book Form (Left Side) */
+.add-book-box {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+    display: inline-block; /* Ensure it stays left */
+}
+
+/* Search Books Form (Right Side) */
+.search-book-box {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+    display: inline-block; /* Ensure it stays right */
+}
+
+/* Borrowing Form */
+.borrowing-box {
+    flex: 1;
+    max-width: 400px;
+    margin-top: 30px; /* Position Borrowing Form below Features Book */
+    margin-bottom: 50px;  /* Spacing from the bottom */
+    display: inline-block;
+}
+
+/* Token (Left and Right) */
+.token-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Header Styles */
+h3 {
+    color: #ff5733;  /* Bright red-orange for titles */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Increased space for readability */
+}
+
+/* Individual Form Row Styling */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #ffffe0;  /* Light yellow on focus */
+}
+
+/* Submit Button */
+.submit-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.submit-row input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #ff5733; /* Vibrant red-orange */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-row input[type="submit"]:hover {
+    background-color: #ff2a1f; /* Darker red-orange for hover */
+}
+
+/* Book Image Section */
+.book-images-row {
+    display: flex;
+    justify-content: space-around; 
+    gap: 25px; 
+    flex-wrap: wrap; 
+    margin: 40px 0;
+}
+
+.book-image {
+    flex: 1; 
+    max-width: 30%; 
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
+    background-color: #ffffff;
+    border-radius: 8px; 
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-image:hover {
+    transform: scale(1.05);  /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; 
+}
+
+.book-image p {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
